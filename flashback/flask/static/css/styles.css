@@ -11052,10 +11052,14 @@ html {
 }
 
 .bg-image {
-  background-image: url("/static/Images/BGweb.png");
+  background-image: url("/static/Images/BGweb#2-8.png");
   background-size: cover;
   background-position: center;
   width: auto;
   height: auto;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
+}
+
+h3 {
+  color: #052669;
 }
