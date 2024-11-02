@@ -23,8 +23,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container">
-                
-                <a class="navbar-brand" href="#page-top"><img src={{url_for('static', filename = "Images/FB_#3.png")}} style="height: 80px; width: 300px;"></a>
+                <a class="navbar-brand" href="#page-top"><img src={{url_for('static', filename = "Images/FB_#3.png")}} style="height: 5rem; width: 18.75rem;"></a>
                 <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
@@ -32,17 +31,17 @@
             </div>
         </nav>
         <!-- Masthead-->
-        <header class="masthead bg-primary text-white text-center">
+        <header class="masthead bg-primary text-white text-center" style = "">  
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
-                <img class="masthead-avatar mb-5" src={{url_for('static', filename="assets/img/avataaars.svg")}} alt="..." />
+                <img class="masthead-avatar mb-5" src={{url_for('static', filename = "Images/FB_#4.png")}} alt="..." />
                 <!-- Masthead Heading-->
                 <h1 class="masthead-heading text-uppercase mb-0">Recall in real time!</h1>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-line" style="color: #1a252f;"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star" style="color: #1a252f;"></i></div>
+                    <div class="divider-custom-line" style="color: #1a252f;"></div>
                 </div>
                 <!-- Masthead Subheading-->
                 <div class="container">
@@ -52,7 +51,7 @@
                                 <!-- Name input-->
                                 <div class="form-floating mb-6">
                                     <input class="form-control" name="prompt" id="prompt" type="text" placeholder="Enter your prompt..." data-sb-validations="required" />
-                                    <label for="prompt">What would you like to recall today?</label>
+                                    <label for="prompt" margin-left="-10px">What would you like to recall today?</label>
                                     <div class="invalid-feedback" data-sb-feedback="name:required">A prompt is required.</div>
                                 </div>
                                 <!-- Submit error message-->
@@ -83,28 +82,58 @@
                 <div class="row">
                     <!-- Footer Location-->
                     <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Location</h4>
-                        <p class="lead mb-0">
-                            Wilkinson 012
+                        <h4 class="text-uppercase mb-4">About FlashBack</h4>
+                        <h3 class="lead mb-0">
+                            Flashback is an app that helps you recall details about your recent interactions, or recall important lessons that were taught during class!
                         </p>
                     </div>
                     <!-- Footer Social Icons-->
                     <div class="col-lg-4 mb-5 mb-lg-0">
-                    </div>
-                    <!-- Footer About Text-->
-                    <div class="col-lg-4">
-                        <h4 class="text-uppercase mb-4">About Flashback</h4>
+                        <h4 class="text-uppercase mb-4">Location</h4>
                         <p class="lead mb-0">
-                            Flashback is an app that helps you recall details about your recent interactions, or recall important lessons that were taught during class!
+                            Wilkinson 012
+                            534 Research Dr, 
+                            Durham, NC 27705
                         </p>
                     </div>
+                    <!-- Footer About Text-->
+
+                    <!-- Add Bootstrap Icons CDN -->
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css">
+
+                    <!-- Social Icons -->
+                    <div class="col-lg-4 social-icons">
+                        <h4 class="text-uppercase mb-4">Contact Us</h4>
+                            <a href="https://web.facebook.com/michael.agyemanprempeh.5" class="me-3"><i class="bi bi-facebook fs-4"></i></a>
+                            <a href="https://twitter.com/map_dankwah" class="me-3"><i class="bi bi-twitter fs-4"></i></a>
+                            <a href="https://www.instagram.com/theoriginalmapd/" class="me-3"><i class="bi bi-instagram fs-4"></i></a>
+                            <a href="https://www.linkedin.com/in/michael-agyeman-prempeh-87a39915b/" class="me-3"><i class="bi bi-linkedin fs-4"></i></a>
+                    </div>
+
                 </div>
             </div>
         </footer>
         <!-- Copyright Section-->
         <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright &copy; Team Flashback 2024</small></div>
+            <div class="container"></div>
+                <h6> &copy 2024 All Rights Reserved.<br>
+                Made with <i class="fa fa-heart pulse"></i> by Team Flashback @ <a href="https://duke-ai-hack.webflow.io/">DukeAIHack2024</a></h6>
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- NOT NEEDED -->
+
         <!-- Portfolio Modals-->
         <!-- Portfolio Modal 1-->
         <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
@@ -138,7 +167,7 @@
                 </div>
             </div>
         </div>
-        <!-- Portfolio Modal 2-->
+      <!-- Portfolio Modal 2-->
         <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
@@ -298,6 +327,17 @@
                 </div>
             </div>
         </div>
+
+
+
+
+
+
+
+
+
+
+
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
