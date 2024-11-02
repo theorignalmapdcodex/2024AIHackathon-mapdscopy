@@ -11052,10 +11052,10 @@ html {
 }
 
 .bg-image {
-  background-image: url("/static/Images/BGweb#2-8.png");
+  background-image: url("/static/Images/BGweb.png");
   background-size: cover;
   background-position: center;
   width: auto;
   height: auto;
-  margin-bottom: 0;
+  margin-bottom: 30px;
 }
