@@ -6,6 +6,9 @@ RUN pip install --upgrade pip
 # get curl for healthchecks
 RUN apk add curl
 
+# install ffmpeg
+RUN apt-get install -y ffmpeg
+
 # permissions and nonroot user for tightened security
 RUN adduser -D nonroot
 RUN mkdir /home/app/ && chown -R nonroot:nonroot /home/app
