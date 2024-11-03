@@ -7,7 +7,7 @@ RUN pip install --upgrade pip
 RUN apk add curl
 
 # install ffmpeg
-RUN apt-get install -y ffmpeg
+RUN apk add --update ffmpeg
 
 # permissions and nonroot user for tightened security
 RUN adduser -D nonroot
