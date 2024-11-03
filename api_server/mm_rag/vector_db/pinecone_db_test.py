@@ -24,6 +24,12 @@ def test_insert():
 
     result = pinecone_db.insert(embedding_list)
 
+    # Check if the insert was successful
+    assert result["upserted_count"] == 2
+
+    # delete the inserted embeddings, so we are good to go
+    pinecone_db.index.delete(ids=[record.video_id for record in embedding_list], namespace="video")
+
 def test_query():
     # Test the query function of the PineconeDB class
     pinecone_db = PineconeDB()
