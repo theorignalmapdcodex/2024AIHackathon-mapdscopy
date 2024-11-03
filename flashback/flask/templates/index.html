@@ -6,6 +6,7 @@
         <meta name="Flashback! An app that helps you recall events in time!" content="" />
         <meta name="author" content="" />
 
+
         <title>FlashBack</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href={{url_for('static', filename = "Images/FB_#11.png")}} />
@@ -61,8 +62,32 @@
                                 <!-- an error submitting the form-->
                                 <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                                 
+
+                                <!-- Show Loader Function -->
+                                    <!--onclick="showLoader()"-->
+
+                                <!-- <script>
+                                    function showLoader() {
+                                        document.getElementById('loaderContainer').style.display = 'block';
+                                        // Simulate API call (remove this in production)
+                                        setTimeout(() => {
+                                            document.getElementById('loaderContainer').style.display = 'none';
+                                        }, 3000);
+                                    }
+                                </script> -->
+
+
                                 <!-- Submit Button-->
                                 <button class="btn btn-primary btn-xl" id="submitButton" type="submit">Send</button>
+                            
+                                <!-- Processing Request-->>
+                                <div class="loader-container" id="loaderContainer">
+                                    <span class="loader"></span>
+                                    <p class="loader-text">Processing your request...</p>
+                                </div>
+
+                            
+
                             </form>
                             {% with messages = get_flashed_messages() %}
                                 {% if messages %}
