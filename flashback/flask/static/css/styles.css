@@ -11066,7 +11066,7 @@ h3 {
 
 /* Adding a processing request loader */
 
-/* .loader-container {
+.loader-container {
     display: none;
     position: fixed;
     top: 50%;
@@ -11135,4 +11135,4 @@ input[type="text"] {
 
 .send-button:hover {
     background-color: #e5901a;
-} */
+}

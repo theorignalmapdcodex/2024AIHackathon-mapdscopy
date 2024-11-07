@@ -66,28 +66,28 @@
                                 <!-- Show Loader Function -->
                                     <!--onclick="showLoader()"-->
 
-                                <!-- <script>
-                                    function showLoader() {
-                                        document.getElementById('loaderContainer').style.display = 'block';
-                                        // Simulate API call (remove this in production)
-                                        setTimeout(() => {
-                                            document.getElementById('loaderContainer').style.display = 'none';
-                                        }, 3000);
-                                    }
-                                </script> -->
 
+                                 <!-- Submit Button-->
+                                <button class="btn btn-primary btn-xl" id="submitButton" type="submit" onclick="showLoader()">Send</button>
 
-                                <!-- Submit Button-->
-                                <button class="btn btn-primary btn-xl" id="submitButton" type="submit">Send</button>
+                                
+                                    <!-- Processing Request-->>
+                                    <div class="loader-container" id="loaderContainer">
+                                        <span class="loader"></span>
+                                        <p class="loader-text">Processing your request...</p>
+                                    </div>
+
+                                    <script>
+                                        function showLoader() {
+                                            document.getElementById('loaderContainer').style.display = 'block';
+                                     
+                                            setTimeout(() => {
+                                                document.getElementById('loaderContainer').style.display = 'none';
+                                            }, 6000);
+                                        }
+                                    </script>
                             
-                                <!-- Processing Request-->>
-                                <div class="loader-container" id="loaderContainer">
-                                    <span class="loader"></span>
-                                    <p class="loader-text">Processing your request...</p>
-                                </div>
-
-                            
-
+                              
                             </form>
                             {% with messages = get_flashed_messages() %}
                                 {% if messages %}
@@ -99,7 +99,10 @@
                                 {% endif %}
                             {% endwith %}
                         </div>
-                </div>
+
+    
+
+                    </div>
                 </div>
             </div>
         </header>
